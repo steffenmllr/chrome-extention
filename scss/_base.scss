@@ -28,13 +28,22 @@ body {
     .profile__avatar {
         background-color: $background-silver;
         margin-bottom: 32px;
-        img {
+        .avatar__wrapper {
             width: 96px;
             height: 96px;
             border-radius: 50%;
+            overflow: hidden;
             position: relative;
+            left: 50%;
             top: 48px;
+            margin-left: -48px;
             border: 8px solid white;
+            img {
+                width: 128px;
+                position: relative;
+                left: -16px;
+                top: -16px;
+            }
         }
     }
     .profile__details {

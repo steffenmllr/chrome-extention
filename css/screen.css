@@ -100,33 +100,42 @@ body {
     background-color: #f8f9f9;
     margin-bottom: 32px; }
     /* line 31, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
-    .wrapper__profile .profile__avatar img {
+    .wrapper__profile .profile__avatar .avatar__wrapper {
       width: 96px;
       height: 96px;
       border-radius: 50%;
+      overflow: hidden;
       position: relative;
+      left: 50%;
       top: 48px;
+      margin-left: -48px;
       border: 8px solid white; }
-  /* line 40, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+      /* line 41, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+      .wrapper__profile .profile__avatar .avatar__wrapper img {
+        width: 128px;
+        position: relative;
+        left: -16px;
+        top: -16px; }
+  /* line 49, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
   .wrapper__profile .profile__details {
     padding: 16px; }
-  /* line 43, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  /* line 52, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
   .wrapper__profile .profile__actions {
     float: left;
     width: 100%;
     text-align: center;
     margin-bottom: 32px; }
 
-/* line 53, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+/* line 62, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
 .wrapper__actions {
   padding: 16px;
   float: left;
   width: 100%;
   background-color: #f8f9f9; }
-  /* line 58, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  /* line 67, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
   .wrapper__actions .btn {
     width: 48%;
     float: left; }
-    /* line 61, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+    /* line 70, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
     .wrapper__actions .btn:last-child {
       float: right; }
