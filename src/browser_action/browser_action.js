@@ -8,6 +8,9 @@
 // });
 
 function setDOMInfo(info) {
+    $('.profile__details h1').text(info.name);
+    $('#avatar').attr('src', info.image);
+
     console.log('setDOMInfo', info);
 }
 
