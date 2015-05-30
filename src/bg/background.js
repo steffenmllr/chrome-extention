@@ -1,16 +1,9 @@
-// if you checked "fancy-settings" in extensionizr.com, uncomment this lines
-
-// var settings = new Store("settings", {
-//     "sample_setting": "This is how you use Store.js to remember values"
-// });
-
-
-//example of using a message handler from the inject scripts
 chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
     var bkg = chrome.extension.getBackgroundPage();
-    bkg.console.log('Foobar');
-  	chrome.pageAction.show(sender.tab.id);
-    sendResponse();
+    if(request.type === 'xing') {
+        bkg.console.log(request.data);
+        // Save it using the Chrome extension storage API.
+        chrome.storage.sync.set(request.data);
+    }
+
 });
-
-
