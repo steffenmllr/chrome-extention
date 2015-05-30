@@ -37,7 +37,9 @@ var xingscraper = {
                 position: $($(entry)).find('.job-title').text()
             };
         });
-    }()
+    }(),
+    email: false,
+    website: false
 };
 
 
@@ -48,7 +50,7 @@ var linkedinscraper = {
     job_title: $('#headline .title').text().split(' at ')[0],
     current_company: $('#headline .title').text().split(' at ')[1],
     current_company_location: $('#location .locality').text(),
-    profil_url: window.location.href,
+    profil_url: $($('.public-profile-url')).text().trim(),
     languages: function() {
         return $.map($('#languages-view .section-item'), function(language) {
             return {
@@ -69,8 +71,18 @@ var linkedinscraper = {
                 position: $($(entry)).find('h4 a').text().trim(),
             };
         });
-    }()
+    }(),
+    email: false,
+    website: false
 };
 
 
-
+var githubscraper = {
+    name: $($('.vcard-fullname')).text().trim(),
+    image: $($('img.avatar')[0]).attr('src'),
+    current_company: $($("[itemprop='worksFor']")).text().trim(),
+    current_company_location: $($("[itemprop='homeLocation']")).text().trim(),
+    profil_url: window.location.href,
+    email: $($('.email')).text().trim(),
+    website: $($('.url')).text().trim(),
+};
