@@ -1,17 +1,25 @@
 <!doctype html>
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-</style>
+<link rel="stylesheet" id="uploader-css" href="../../css/screen.css" type='text/css' media='all'/>
 
 <div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
+
+    <div class="wrapper wrapper__profile">
+        <div class="profile__avatar">
+            <img src="https://x2.xingassets.com/img/users/c/5/e/580cf3296.7085847,1.256x256.jpg">
+        </div>
+        <div class="profile__details">
+            <h1>Max Mustermann</h1>
+        </div>
+        <div class="profile__actions">
+             <div class="btn btn-bordered">Add to List</div>
+        </div>
+    </div>
+
+    <div class="wrapper wrapper__actions">
+        <div class="actions">
+            <div class="btn">Show List</div>
+            <div class="btn btn-bordered warning">Reset List</div>
+        </div>
+    </div>
+
 </div>

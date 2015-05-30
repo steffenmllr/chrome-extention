@@ -1,0 +1,71 @@
+button {
+   border: none;
+   background-color: $primary;
+   color: white;
+}
+
+// Remove dotted lines around links
+a, a:active, a:focus{
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    -webkit-font-smoothing: auto;
+    -webkit-user-select: none;
+    background-color: $primary;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 46px;
+    border: 1px solid $primary;
+    &:focus {
+        outline: none;
+    }
+    &:hover,
+    &.hover {
+      background-color: lighten($primary, 6%);
+    }
+    i {
+        margin-right: 4px;
+        font-size: 24px;
+        position: relative;
+        top: 4px;
+        left: -4px;
+    }
+}
+
+.btn-bordered {
+    // normal, hover, focus, disabled, textcolor (hover, focus)
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    &:hover {
+        background-color: $primary;
+        color: white;
+    }
+}
+
+
+.btn-bordered.warning {
+    // normal, hover, focus, disabled, textcolor (hover, focus)
+    background-color: transparent;
+    color: $warning;
+    border: 1px solid $warning;
+    &:hover {
+        background-color: $warning;
+        color: white;
+    }
+}
+
+

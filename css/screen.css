@@ -1,0 +1,132 @@
+/* line 1, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+button {
+  border: none;
+  background-color: #2196F3;
+  color: white; }
+
+/* line 8, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+a, a:active, a:focus {
+  outline: none;
+  /* Works in Firefox, Chrome, IE8 and above */ }
+
+/* line 12, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: auto;
+  -webkit-user-select: none;
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 2px;
+  text-decoration: none;
+  position: relative;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 46px;
+  border: 1px solid #2196F3; }
+  /* line 32, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+  .btn:focus {
+    outline: none; }
+  /* line 36, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+  .btn:hover,
+  .btn.hover {
+    background-color: #3ea4f5; }
+  /* line 39, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+  .btn i {
+    margin-right: 4px;
+    font-size: 24px;
+    position: relative;
+    top: 4px;
+    left: -4px; }
+
+/* line 48, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+.btn-bordered {
+  background-color: transparent;
+  color: #2196F3;
+  border: 1px solid #2196F3; }
+  /* line 53, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+  .btn-bordered:hover {
+    background-color: #2196F3;
+    color: white; }
+
+/* line 60, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+.btn-bordered.warning {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red; }
+  /* line 65, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_buttons.scss */
+  .btn-bordered.warning:hover {
+    background-color: red;
+    color: white; }
+
+/* line 1, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+/* line 5, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+body {
+  margin: 0; }
+
+/* line 9, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+#mainPopup {
+  width: 410px;
+  font-family: Helvetica, Ubuntu, Arial, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+/* line 19, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+.wrapper__profile {
+  float: left;
+  width: 100%; }
+  /* line 23, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  .wrapper__profile .profile__details,
+  .wrapper__profile .profile__avatar {
+    float: left;
+    width: 100%;
+    text-align: center; }
+  /* line 28, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  .wrapper__profile .profile__avatar {
+    background-color: #f8f9f9;
+    margin-bottom: 32px; }
+    /* line 31, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+    .wrapper__profile .profile__avatar img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      position: relative;
+      top: 48px;
+      border: 8px solid white; }
+  /* line 40, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  .wrapper__profile .profile__details {
+    padding: 16px; }
+  /* line 43, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  .wrapper__profile .profile__actions {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px; }
+
+/* line 53, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+.wrapper__actions {
+  padding: 16px;
+  float: left;
+  width: 100%;
+  background-color: #f8f9f9; }
+  /* line 58, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+  .wrapper__actions .btn {
+    width: 48%;
+    float: left; }
+    /* line 61, /Users/smps/Sites/mllrsohn.dev/chrome-extension/scss/_base.scss */
+    .wrapper__actions .btn:last-child {
+      float: right; }

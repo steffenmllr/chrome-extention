@@ -1,0 +1,65 @@
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    margin: 0;
+}
+
+#mainPopup {
+    width: 410px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+//
+// Profile
+.wrapper__profile {
+    float: left;
+    width: 100%;
+    .profile__details,
+    .profile__avatar, {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    .profile__avatar {
+        background-color: $background-silver;
+        margin-bottom: 32px;
+        img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            position: relative;
+            top: 48px;
+            border: 8px solid white;
+        }
+    }
+    .profile__details {
+        padding: 16px;
+    }
+    .profile__actions {
+        float: left;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+}
+
+//
+// Actions
+.wrapper__actions {
+    padding: 16px;
+    float: left;
+    width: 100%;
+    background-color: $background-silver;
+    .btn {
+        width: 48%;
+        float: left;
+        &:last-child {
+            float: right;
+        }
+    }
+}

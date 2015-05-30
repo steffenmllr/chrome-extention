@@ -1,0 +1,5 @@
+@mixin box-sizing($var) {
+  -webkit-box-sizing: $var; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: $var;    /* Firefox, other Gecko */
+  box-sizing: $var;         /* Opera/IE 8+ */
+}
